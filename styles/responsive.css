@@ -1,0 +1,57 @@
+/* min-widths */
+
+@media (min-width: 576px){
+    .container{
+        width: 540px;
+    }
+}
+
+@media (min-width: 768px){
+    .container{
+        width: 720px;
+    }
+}
+
+@media (min-width: 992px){
+    .container{
+        width: 960px;
+    }
+}
+
+@media (min-width: 1200px){
+    .container{
+        width: 1140px;
+    }
+}
+
+@media (min-width: 1400px){
+    .container{
+        width: 1320px;
+    }
+}
+
+/* max-widths */
+
+@media (max-width: 1400px){
+    .header-background img{
+        transform: scale(1.5);
+    }
+}
+
+@media (max-width: 1100px){
+    .header-background img{
+        transform: scale(2.5);
+    }
+}
+
+@media (max-width: 1200px){
+    .header-buttons ul:first-child{
+        display: none;
+    }
+    .brand-page{
+        display: none;
+    }
+    .bx-paper-plane{
+        display: block;
+    }
+}

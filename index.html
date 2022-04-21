@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#87ceeb">
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Open-Sans Font Link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Css File Link -->
+    <link rel="stylesheet" href="./styles/index.css" />
+    <!-- Responsive Css File -->
+    <link rel="stylesheet" href="./styles//responsive.css">
+    <!-- layout css file -->
+    <link rel="stylesheet" href="./styles/layout.css">
+    <!-- media css file -->
+    <link rel="stylesheet" href="./styles/media.css">
+
+    <title>HTML/CSS-Project</title>
+</head>
+
+<body>
+
+
+
+
+
+    <div class="backdrop"></div>
+    <header class="header">
+
+        <div class="container">
+            <div class="intro">
+                <h1 class="brand-page">
+                    <a href="mailto:omidjr17@gmial.com">Omid</a>
+                </h1>
+                <i class='bx bx-paper-plane'></i>
+                <div class="header-buttons">
+                    <ul>
+                        <li>solution</li>
+                        <li>about us</li>
+                        <li>contact</li>
+                    </ul>
+                    <ul>
+                        <li><i class="bx bxs-plane"></i></li>
+                        <li id="show-menu"><i class="bx bx-menu"></i></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="header-content">
+                <h4>This Project is for to show my skill in HTML-CSS</h4>
+                <div>
+                    <button>
+                        <a href="https://github.com/OmidPishkar">github</a>
+                    </button>
+                    <button>
+                        <a href="https://www.linkedin.com/in/omid-pishkar-993418225/">linkedin</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <ul id="full-menu" class="full-menu">
+            <div class="container-fluid">
+                <button class="close-menu  bx bx-right-arrow-alt"></button>
+                <p>This Menu is for test</p>
+            </div>
+        </ul>
+    </header>
+
+    <div class="rotate-message">
+        <div>
+            <i class="bx bx-rotate-right"></i>
+            <p>Please turn your phone to landscape portrait mode.</p>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        const showMenuButton = document.querySelector('#show-menu');
+        const closeMenuButton = document.querySelector('.close-menu');
+        const backdrop = document.querySelector('.backdrop')
+        const fullMenu = document.querySelector('#full-menu');
+        showMenuButton.addEventListener('click', () => {
+            fullMenu.classList.add('show');
+            backdrop.classList.add('show');
+        })
+        closeMenuButton.addEventListener('click', () => {
+            fullMenu.classList.remove('show');
+            backdrop.classList.remove('show');
+        })
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,14 @@
+
+@media (max-width: 768px){
+    @media (orientation: landscape){
+        .rotate-message{
+            display: flex;
+        }
+    }
+}
+
+@media (pointer: coarse){
+    li{
+        padding: 15px;
+    }
+}

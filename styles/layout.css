@@ -1,0 +1,19 @@
+.container,
+.container-fluid{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+.row{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
